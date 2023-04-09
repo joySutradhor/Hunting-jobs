@@ -8,17 +8,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
+import Features from './Components/Features/Features';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    children: [
-      {
-        path: "/appliedjobs",
-        element: <AppliedJobs></AppliedJobs>,
-      },]
   },
+
 
 ]);
 

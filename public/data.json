@@ -1,0 +1,96 @@
+[
+    {
+      "id": 1,
+      "img": null,
+      "phone": "555-555-5555",
+      "email": "example@example.com",
+      "location": "New York, NY",
+      "title": "Software Engineer",
+      "company": "Acme Inc.",
+      "jobEnvironment": ["remote", "full time"],
+      "salary": "100k - 120k",
+      "jobDescription": "We are seeking a skilled software engineer to join our team.",
+      "jobResponsibilities": "Responsibilities include developing and maintaining software applications, collaborating with cross-functional teams, and providing technical guidance and support.",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+      "experience": "3+ years of professional software development experience"
+    },
+    {
+      "id": 2,
+      "img": null,
+      "phone": "555-555-5555",
+      "email": "example@example.com",
+      "location": "San Francisco, CA",
+      "title": "Data Scientist",
+      "company": "Beta Corp.",
+      "jobEnvironment": ["onsite", "full time"],
+      "salary": "110k - 130k",
+      "jobDescription": "We are seeking a data scientist to join our team and help us leverage data to make informed business decisions.",
+      "jobResponsibilities": "Responsibilities include analyzing large datasets, developing predictive models, and communicating insights to stakeholders.",
+      "educationalRequirements": "Master's degree in Data Science or related field",
+      "experience": "5+ years of experience in data analysis and modeling"
+    } ,
+  
+{
+    "id": 3,
+    "img": null,
+    "phone": "555-555-5555",
+    "email": "example@example.com",
+    "location": "Chicago, IL",
+    "title": "Marketing Manager",
+    "company": "Gamma LLC",
+    "jobEnvironment": ["remote", "full time"],
+    "salary": "90k - 110k",
+    "jobDescription": "We are seeking a creative marketing manager to help us develop and implement marketing campaigns that drive business growth.",
+    "jobResponsibilities": "Responsibilities include conducting market research, developing marketing strategies, and collaborating with cross-functional teams.",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field",
+    "experience": "5+ years of experience in marketing or related field"
+  } ,
+  
+  {
+    "id": 4,
+    "img": null,
+    "phone": "555-555-5555",
+    "email": "example@example.com",
+    "location": "Seattle, WA",
+    "title": "Product Manager",
+    "company": "Delta Co.",
+    "jobEnvironment": ["onsite", "full time"],
+    "salary": "120k - 140k",
+    "jobDescription": "We are seeking an experienced product manager to help us develop and launch new products that meet customer needs and drive business growth.",
+    "jobResponsibilities": "Responsibilities include defining product requirements, collaborating with cross-functional teams, and analyzing market trends.",
+    "educationalRequirements": "Bachelor's degree in Business, Engineering or related field",
+    "experience": "7+ years of experience in product management or related field"
+  } ,
+  
+  {
+    "id": 5,
+    "img": null,
+    "phone": "555-555-5555",
+    "email": "example@example.com",
+    "location": "Austin, TX",
+    "title": "UX Designer",
+    "company": "Epsilon Inc.",
+    "jobEnvironment": ["onsite", "full time"],
+    "salary": "90k - 110k",
+    "jobDescription": "We are seeking a talented UX designer to help us create intuitive and engaging user experiences for our digital products.",
+    "jobResponsibilities": "Responsibilities include conducting user research, designing wireframes and prototypes, and collaborating with cross-functional teams.",
+    "educationalRequirements": "Bachelor's degree in Design, HCI or related field",
+    "experience": "3+ years of experience in UX design or related field"
+  } ,
+
+  {
+    "id": 6,
+    "img": null,
+    "phone": "555-555-5555",
+    "email": "example@example.com",
+    "location": "Boston, MA",
+    "title": "Sales Manager",
+    "company": "Zeta Inc.",
+    "jobEnvironment": ["onsite", "full time"],
+    "salary": "120k - 140k",
+    "jobDescription": "We are seeking a results-driven sales manager to lead our sales team and drive revenue growth.",
+    "jobResponsibilities": "Responsibilities include setting sales targets, developing sales strategies, and managing sales team performance.",
+    "educationalRequirements": "Bachelor's degree in Business, Marketing or related field",
+    "experience": "7+ years of experience in sales or related field"
+  }
+]
