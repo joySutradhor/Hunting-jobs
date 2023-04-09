@@ -6,7 +6,7 @@ const Navbar = ({ links }) => {
     return (
         <nav>
             <div className='flex justify-around mt-[30px] mb-[60px] items-center'>
-            <h1 className='text-[32px] font-bold'>Hunting Jobs</h1>
+            <h1 className='text-[32px] font-semibold'>Hunting Jobs</h1>
             <ul className='flex'>
                 {links.map(link => (
                     <li key={link.id}>

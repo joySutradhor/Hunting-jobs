@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from '../Header/Header';
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
+import HeaderDesc from '../HeaderDesc/HeaderDesc';
+import Cetegory from '../Cetegory/Cetegory';
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            <Outlet></Outlet>
+           <HeaderDesc> </HeaderDesc>
+           <Cetegory></Cetegory>
+            
         </div>
     );
 };
