@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleCetegoryItem from './SingleCetegoryItem';
 
 const jobArray = [
     {
@@ -32,14 +33,10 @@ const CetegoryItem = () => {
     return (
         <div className=' flex'>
             {
-                jobArray.map(job => <div className='p-3 w-[300px] '>
-                    <div className='bg-gray-200 gap-4 p-5 rounded-md'>
-                    <img src={job.img} alt="img come from outside"  className='h-[40px]'/>
-                     <h2 className='text-[20px] text-[#201e1e]'>{job.title}</h2>
-                     <small>{job.availableJobs}</small>
-                    </div>
-
-                </div>)
+                jobArray.map(job => <SingleCetegoryItem
+                key={job.id}
+                job = {job}
+                ></SingleCetegoryItem>)
             }
         </div>
     );
