@@ -7,14 +7,28 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import HomeContainer from './Components/HomeContainer/HomeContainer';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
-import Features from './Components/Features/Features';
+import ViewDetails from './Components/ViewDetails/ViewDetails';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-  },
+    children: [
+      {
+        path: "/" , 
+        element: <HomeContainer></HomeContainer>,
+        loader: ()=> fetch('data.json')
+      },
+      {
+        path: "/viewdetails",
+        element: <ViewDetails></ViewDetails>
+      }
+    ]
+  }
+  
 
 
 ]);

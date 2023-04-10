@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ links }) => {
-    console.log(links)
     return (
         <nav>
             <div className='flex justify-around mt-[30px] mb-[60px] items-center'>
