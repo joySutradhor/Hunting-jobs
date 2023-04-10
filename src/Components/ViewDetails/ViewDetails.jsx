@@ -2,7 +2,6 @@ import React, { useState , useEffect } from 'react';
 import SingleViewDetails from './SingleViewDetails';
 
 
-
 const ViewDetails = () => {
     const item = localStorage.getItem("jobs");
           const jobItem = JSON.parse(item);
@@ -16,13 +15,12 @@ const ViewDetails = () => {
               }
           }, []);
       
-          const handleAppliedJobs = (id, jobNature) => {
+          const handleAppliedJobs = (id , job) => {
               const isBookmarked = bookmarks.some((bookmark) => bookmark.id === id);
               if (isBookmarked) {
-
               } 
               else {
-                  const newBookmarks = [...bookmarks, { id, jobNature }];
+                  const newBookmarks = [...bookmarks, { id , job }];
                   localStorage.setItem('alljobs', JSON.stringify(newBookmarks));
                   setBookmarks(newBookmarks);
                   
