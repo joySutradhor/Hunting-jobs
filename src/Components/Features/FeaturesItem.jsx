@@ -5,17 +5,21 @@ import FeaturesSingleItem from './FeaturesSingleItem';
 const FeaturesItem = () => {
     const allItems = useLoaderData();
     const [items, setItems] = useState(allItems.slice(0, 4));
+    const [show , setShow ] = useState(false)
 
     const handleAppliedJobs = item => {
         localStorage.setItem("jobs", JSON.stringify(item))
     }
 
-    const handleShowAll = allItems => setItems(allItems) ;
+    const handleShowAll = allItems => {
+        setItems(allItems)
+        setShow(true)
+    } ;
 
 
     return (
         <>
-            <div className='grid grid-cols-2 gap-5 justify-center mx-20'>
+            <div className='grid grid-cols-2 gap-5 justify-center mx-20 mb-10'>
 
                 {
                     items.map(item => <FeaturesSingleItem
@@ -28,7 +32,7 @@ const FeaturesItem = () => {
 
             </div>
             <div className='w-full text-center'>
-                <button className='my-10 bg-gradient-to-t from-[#7E90FE] to-[#9873FF] p-2 rounded-md text-white' onClick={() => handleShowAll(allItems)}>Show All</button>
+                <button className= { `mb-10 bg-gradient-to-t from-[#7E90FE] to-[#9873FF] p-2 rounded-md text-white ${show ? "hidden" : ""}` } onClick={() => handleShowAll(allItems)}>Show All</button>
             </div>
 
         </>
