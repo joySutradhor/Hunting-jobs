@@ -10,6 +10,7 @@ import {
 import HomeContainer from './Components/HomeContainer/HomeContainer';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import ViewDetails from './Components/ViewDetails/ViewDetails';
+import Statistics from './Components/Statistics/Statistics';
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,12 @@ const router = createBrowserRouter([
       {
         path : "/appliedjobs",
         element : <AppliedJobs></AppliedJobs>
+      },
+      {
+        path : "/statistics",
+        element: <Statistics></Statistics>
       }
+
     ]
   }
 
