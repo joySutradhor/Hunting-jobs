@@ -31,7 +31,7 @@ const jobArray = [
 
 const CetegoryItem = () => {
     return (
-        <div className=' flex'>
+        <div className=' grid grid-cols-4 '>
             {
                 jobArray.map(job => <SingleCetegoryItem
                 key={job.id}

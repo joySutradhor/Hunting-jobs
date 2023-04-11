@@ -19,7 +19,7 @@ const AppliedJobs = () => {
     return (
         <div>
             <div className='flex justify-between mx-20 mb-20 '>
-                <h1>Applied jobs : 0{getData ? getData.length : 0}</h1>
+                <h1>Applied jobs : 0{appliedalljobs ? appliedalljobs.length : 0}</h1>
                 <div className='flex gap-2 p-3'>
                     <button className='rounded-md text-white  p-2 bg-gradient-to-t from-[#7E90FE] to-[#9873FF]' onClick={()=> handleAllJobs(getData)}>All Jobs</button>
                     <button onClick={() => handleOnsite(getData)} className='p-2 rounded-md text-white  bg-gradient-to-t from-[#7E90FE] to-[#9873FF]'>Onsite</button>
