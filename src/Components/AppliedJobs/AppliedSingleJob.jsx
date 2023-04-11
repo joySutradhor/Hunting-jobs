@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AppliedSingleJob = ({ appliedjobs }) => {
-    console.log(appliedjobs.job)
     const { img, title, company, jobEnvironment, location, salary } = appliedjobs.job;
     return (
         <>
