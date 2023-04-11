@@ -1,6 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import SingleViewDetails from './SingleViewDetails';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ViewDetails = () => {
     const item = localStorage.getItem("jobs");
@@ -18,6 +19,8 @@ const ViewDetails = () => {
           const handleAppliedJobs = (id , job) => {
               const isBookmarked = bookmarks.some((bookmark) => bookmark.id === id);
               if (isBookmarked) {
+                const notify = () => toast("Already Applied Bro !!")
+                notify() ;
               } 
               else {
                   const newBookmarks = [...bookmarks, { id , job }];

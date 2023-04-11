@@ -33,7 +33,7 @@ const AppliedJobs = () => {
                         appliedalljobs ? appliedalljobs.map(data => <AppliedSingleJob
                             key={data.id}
                             appliedjobs={data}
-                        ></AppliedSingleJob>) : "NO data"
+                        ></AppliedSingleJob>) : <div className='flex justify-center items-center text-2xl text-red-500'><p>You have not Applied for any Jobs Yet .</p></div>
                     }
                 </div>
             </div>
