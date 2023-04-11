@@ -22,12 +22,12 @@ const FeaturesItem = () => {
             <div className='grid grid-cols-1 mx-2 p-2 md:grid-cols-2 md:gap-5 justify-center md:mx-20 mb-10'>
 
                 {
-                    items.map(item => <FeaturesSingleItem
+                    items? items.map(item => <FeaturesSingleItem
                         key={item.id}
                         item={item}
                         handleAppliedJobs={handleAppliedJobs}
 
-                    ></FeaturesSingleItem>)
+                    ></FeaturesSingleItem>) : "" 
                 }
 
             </div>
